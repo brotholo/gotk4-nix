@@ -31,8 +31,8 @@ let
 	baseNativeBuildInputs = base.nativeBuildInputs or (_: []);
 
 	# For backwards compatibility.
-	# gtk3 = pkgs.gtk3 or pkgs.gnome3.gtk;
-	gtk3 = pkgs.gtk3
+	gtk3 = pkgs.gtk3 or pkgs.gnome3.gtk;
+	# gtk3 = pkgs.gtk3
 
 	buildInputs'' = with pkgs; [
 		# Bare minimum required.
